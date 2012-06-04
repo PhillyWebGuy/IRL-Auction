@@ -1,0 +1,11 @@
+{
+  "name": "contributionElections",
+  "title": "Ascensus",
+  "description": "Contribution Elections",
+  "version": "0.1.0",
+  "homepage": "",
+  "author": {
+    "name": "Intuitive Company",
+    "email": "ehertzog@intuitivecompany.com"
+  }
+}

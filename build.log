@@ -1,0 +1,94 @@
+[4mInitializing[24m
+Command-line options: [36m--verbose[39m, [36m--force[39m
+
+[1mRegistering built-in tasks.[22m
+Loading "concat.js" tasks and helpers...[32mOK[39m
+Tasks: [36mconcat[39m
+Helpers: [36mconcat[39m
+Loading "init.js" tasks and helpers...[32mOK[39m
+Tasks: [36minit[39m
+Helpers: [36mprompt[39m, [36mprompt_for_obj[39m, [36mprompt_for[39m, [36mgit_origin[39m, [36mgithub_web_url[39m
+Loading "lint.js" tasks and helpers...[32mOK[39m
+Tasks: [36mlint[39m
+Helpers: [36mlint[39m
+Loading "min.js" tasks and helpers...[32mOK[39m
+Tasks: [36mmin[39m
+Helpers: [36muglify[39m, [36mgzip[39m, [36mmin_max_info[39m
+Loading "misc.js" tasks and helpers...[32mOK[39m
+Helpers: [36mconfig[39m, [36mjson[39m, [36mstrip_banner[39m, [36mfile_strip_banner[39m, [36mfile_template[39m, [36mbanner[39m
+Loading "qunit.js" tasks and helpers...[32mOK[39m
+Tasks: [36mqunit[39m
+Helpers: [36mphantomjs[39m
+Loading "server.js" tasks and helpers...[32mOK[39m
+Tasks: [36mserver[39m
+Loading "test.js" tasks and helpers...[32mOK[39m
+Tasks: [36mtest[39m
+Loading "watch.js" tasks and helpers...[32mOK[39m
+Tasks: [36mwatch[39m
+
+Reading "grunt.js" config file...[32mOK[39m
+Initializing config...[32mOK[39m
+Reading package.json...[32mOK[39m
+Parsing package.json...[32mOK[39m
+
+[1mRegistering "grunt-jasmine-task" local Npm module tasks.[22m
+Loading "jasmine.js" tasks and helpers...[32mOK[39m
+Tasks: [36mjasmine[39m
+Helpers: [36mphantomjs[39m
+Loading "grunt.js" tasks and helpers...[32mOK[39m
+Tasks: [36mdefault[39m
+
+No tasks specified, running default tasks.
+Running tasks: [36mdefault[39m
+
+[4mRunning "default" task[24m
+
+[4mRunning "lint" task[24m
+
+[4mRunning "lint:files" (lint) task[24m
+Verifying property [36mlint.files[39m exists in config...[32mOK[39m
+Using master JSHint options.
+Options: [36mcurly[39m, [36meqeqeq[39m, [36mimmed[39m, [36mlatedef[39m, [36mnewcap[39m, [36mnoarg[39m, [36msub[39m, [36mundef=false[39m, [36mboss[39m, [36meqnull[39m, [36mbrowser[39m
+Using master JSHint globals.
+Globals: [36mjQuery[39m
+Reading js/helper1.js...[32mOK[39m
+Linting js/helper1.js...[32mOK[39m
+Reading js/helper2.js...[32mOK[39m
+Linting js/helper2.js...[32mOK[39m
+Lint free.
+
+[4mRunning "jasmine" task[24m
+
+[4mRunning "jasmine:all" (jasmine) task[24m
+Verifying property [36mjasmine.all[39m exists in config...[32mOK[39m
+
+[1mRunning specs for test.html[22m
+
+produce a random int between 1 and 100 : number is between 1 and 100...[32mOK[39m
+produce a random int between 1 and 10 from an array : number is between 1 and 10 and from array...[32mOK[39m
+
+
+[32m>> [39m4 assertions passed in 2 specs (28ms)
+
+[4mRunning "concat" task[24m
+
+[4mRunning "concat:dist" (concat) task[24m
+Verifying property [36mconcat.dist[39m exists in config...[32mOK[39m
+Reading js/helper1.js...[32mOK[39m
+Reading js/helper2.js...[32mOK[39m
+Writing js/helper.cat.js...[32mOK[39m
+File "js/helper.cat.js" created.
+
+[4mRunning "min" task[24m
+
+[4mRunning "min:dist" (min) task[24m
+Verifying property [36mmin.dist[39m exists in config...[32mOK[39m
+Generating banner...[32mOK[39m
+Reading js/helper.cat.js...[32mOK[39m
+Minifying with UglifyJS...[32mOK[39m
+Writing js/helper.min.js...[32mOK[39m
+File "js/helper.min.js" created.
+Uncompressed size: [32m990[39m bytes.
+Compressed size: [32m307[39m bytes gzipped ([32m480[39m bytes minified).
+
+[32mDone, without errors.[39m
